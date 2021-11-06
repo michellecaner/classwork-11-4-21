@@ -133,12 +133,12 @@ for (let i = 0; i < animals.length; i++) {
     console.log(`I am mythical.`);
   } else if (animals[i].species === "dog") {
     console.log(`I bark.`);
-  } else if (animals[i].species === "rat" || "monkey") {
+  } else if (animals[i].species === "rat" || animals[i].species === "monkey") {
     console.log(`I am a rat or monkey.`);
   } else if (animals[i].species === "cat" && animals[i].trait === "needy") {
     console.log(`I am Sydney's cat.`);
   } else {
-    console.log(animals[i].name, animals[i].species, animals[i].species);
+    console.log(animals[i].name, animals[i].trait, animals[i].species);
   }
 };
 
